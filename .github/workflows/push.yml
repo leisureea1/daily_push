@@ -22,7 +22,6 @@ jobs:
         run: pwd && ls -al
 
       - name: 安装依赖
-        working-directory: .
         run: pip install -r requirements.txt
 
       - name: 执行推送脚本

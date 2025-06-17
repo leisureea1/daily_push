@@ -27,7 +27,9 @@ jobs:
       - name: 执行推送脚本
         working-directory: .
         env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-          BARK_TOKEN: ${{ secrets.BARK_TOKEN }}
-          BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
+          BARK_URL: ${{ secrets.BARK_URL }}
+          TIANAPI_KEY: ${{ secrets.TIANAPI_KEY }}
         run: python push.py

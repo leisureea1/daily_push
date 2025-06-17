@@ -36,7 +36,7 @@ Settings → Secrets → Actions → New repository secret
 |------------------|---------------------------------------|
 | `PUSHPLUS_TOKEN` | [PushPlus](https://www.pushplus.plus/) 的 token |
 | `BARK_URL`     | Bark 推送服务地址（可选）             |
-| `USERNAME`| 教务系统账号（可选）               |
+| `USERNAME`| 教务系统账号（必填）               |
 | `PASSWORD`     | 教务系统密码（必填）             |
 | `TIANAPI_KEY`| 天行api（可选）               |
 

@@ -85,7 +85,7 @@ Fork 后默认不会自动执行，需要手动启用：
 - `TIANAPI_KEY`
 - `USERNAME`
 - `PASSWORD`
-## 详细教程请移步：[@leisure's Blog](https://blog.leisureea.com)
+## 详细教程请移步：[@Leisure's Blog](https://blog.leisureea.com)
 ---
 
 ## 📁 文件结构
@@ -119,8 +119,8 @@ Fork 后默认不会自动执行，需要手动启用：
 
 ## ✍️ 作者 & 博客
 
-作者：[@leisureea](https://github.com/leisureea1)
+作者：[@Leisureea](https://github.com/leisureea1)
 
-博客地址：[@leisure's Blog](https://blog.leisureea.com)
+博客地址：[@Leisure's Blog](https://blog.leisureea.com)
 
 欢迎访问和交流！

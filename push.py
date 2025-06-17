@@ -355,7 +355,7 @@ else:
 
 
 
-msg += f"\n\n🍵 **每日一言**：_{quote}_\n\n🕓 **推送时间**：{send_time}\n\n**Leisure💗李彤彤**"
+msg += f"\n\n🍵 **每日一言**：_{quote}_\n\n🕓 **推送时间**：{send_time}\n\n**Leisure💗Tiffany**"
 
 with open('今日课表.md', 'w', encoding='utf-8') as f:
     f.write(msg)

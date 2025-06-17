@@ -1,27 +1,31 @@
-name: Daily Push
+name: Push Daily Class Schedule
 
 on:
-  schedule:
-    - cron: '0 23 * * *'  # 每天 7:00（UTC+8）
   workflow_dispatch:
+  schedule:
+    - cron: '0 23 * * *'  # 每天北京时间早上7点执行（UTC+0 23点）
 
 jobs:
-  run:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: 拉取代码
+        uses: actions/checkout@v3
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.11
-      - name: Install deps
+          python-version: '3.11'
+
+      - name: 安装依赖
+        working-directory: .
         run: pip install -r requirements.txt
-      - name: Run script
+
+      - name: 执行推送脚本
+        working-directory: .
         env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-          BARK_URL: ${{ secrets.BARK_URL }}
-          TIANAPI_KEY: ${{ secrets.TIANAPI_KEY }}
-        run: python3 main.py
+          BARK_TOKEN: ${{ secrets.BARK_TOKEN }}
+          BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
+        run: python push.py

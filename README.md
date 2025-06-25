@@ -4,6 +4,12 @@
 
 ---
 
+[![Release](https://img.shields.io/github/v/release/leisureea1/daily_push?color=%2337c6ff)](https://github.com/leisureea1/daily_push/releases)
+[![Stars](https://img.shields.io/github/stars/leisureea1/daily_push?style=social)](https://github.com/leisureea1/daily_push/stargazers)
+[![License](https://img.shields.io/github/license/leisureea1/daily_push)](LICENSE)
+[![Hits](https://hits.sh/github.com/leisureea1/daily_push.svg?style=flat-square)](https://hits.sh/github.com/leisureea1/daily_push/)
+
+---
 ## 🚀 功能特性
 
 - ⏰ 每天早上定时运行
